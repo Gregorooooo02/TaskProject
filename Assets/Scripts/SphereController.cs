@@ -7,11 +7,11 @@ public class SphereController : MonoBehaviour
     public Transform center;
     public Vector3 startPosition;
 
-    [SerializeField] public float radius;
-    [SerializeField] public float radiusDiff;
-    [SerializeField] public float speed;
-    [SerializeField] public float currentSpeed;
-    [SerializeField] public float acceleration;
+    [SerializeField] private float radius;
+    [SerializeField] private float radiusDiff;
+    [SerializeField] private float speed;
+    [SerializeField] private float currentSpeed;
+    [SerializeField] private float acceleration;
     private float angle = 0f;
     private float t = 0f;
 
@@ -113,7 +113,7 @@ public class SphereController : MonoBehaviour
         colorCoroutine = StartCoroutine(ChangeColor());
     }
 
-    public IEnumerator Fireworks()
+    private IEnumerator Fireworks()
     {
         scaleChange.Play();
         yield return new WaitForSeconds(0.5f);
