@@ -5918,7 +5918,7 @@ MonoBehaviour:
   center: {fileID: 1232553238}
   startPosition: {x: 0, y: 0, z: 0}
   radius: 4.5
-  radiusDiff: 0.001
+  radiusDiff: 0.002
   speed: 0.75
   currentSpeed: 0
   acceleration: 0.15
